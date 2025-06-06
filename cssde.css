@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
+/*font-family: "Bebas Neue", sans-serif;*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+body{
+    background-color: rgb(58, 32, 32);
+    font-family: "Poppins", sans-serif;
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    background-image: url(/imagenes/pag.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    
+}
+
+.img-logo{
+    position: absolute;
+    width: 10%;
+   padding-left: 5%;
+   margin-top: 1px;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.hamburger input {
+  display: none;
+}
+
+.hamburger svg {
+  /* The size of the SVG defines the overall size */
+  height: 3em;
+  /* Define the transition for transforming the SVG */
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+  fill: none;
+  stroke: rgb(95, 58, 58);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  /* Define the transition for transforming the Stroke */
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+              stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+  stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+  transform: rotate(45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+
+.logo{
+    font-size: 25px;
+    color: rgba(255, 99, 71, 0.253);
+    font-weight: 800;
+    text-transform:uppercase;
+    margin-left:100px ;
+    
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+    
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color:rgb(255, 254, 254);
+    display: block;
+}
+.menu .navbar ul li a:hover{
+    color: rgb(248, 0, 0);
+}
+#menu{
+    display: none;
+}
+.menu-icono{
+    width: 20px;
+}
+    
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+.header-txt{
+    text-align: center;
+    margin-bottom: 45px;
+    margin: 40px;
+}
+h5{
+    margin: 65px;
+    color: rgb(69, 126, 163);
+    opacity: 25%;
+    font-size: 30px;
+}
+.header-txt h1, span, h3{
+    font-size: 75px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+}
+
+.header-txt span{
+    font-size: 25px;
+}
+.header-txt p{
+
+
+    color: rgb(255, 255, 255);
+    padding: 0 270px ;
+    margin: 10px 0;
+    
+    
+}
+.btn-1{
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: rgb(27, 101, 187);
+    color: aliceblue;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: "Bebas Neue", cursive;
+    margin: 25px 0;
+    border: 0;
+}
+.btn-1:hover{
+    background-color: rgb(8, 143, 69);
+}
+.header-dir{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;  
+}
+
+.dir h3{
+    font-size: 18px;
+    
+}
+.dir p{
+
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    
+}
+.welcome{
+    display: flex;
+}
+
+.welcome-1{
+    background-image: url('/imagenes/m.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    
+}
+.welcome-2{
+    width: 50%;
+    padding: 150px 250px 150px 100px;
+    background-color: rgb(77, 60, 60);
+ 
+}
+h2{
+    font-size: 90px;
+    line-height: 100px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+    margin-bottom: 20px;
+    letter-spacing: 0px;
+
+}
+p{
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    margin: 25px 0;
+}
+
+.b1{
+    color: rgb(168, 90, 90);
+}
+.services{
+    padding: 100px 0;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+.services-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+hr{
+    border: 1px solid red;
+    width: 80px;
+}
+.services-txt p {
+    padding: 50px 150px;
+}
+.services-group{
+    display: flex;
+    justify-content: space-between;
+    margin: 45px 0;
+}
+.services-1{
+    background-color: rgb(0, 0, 0);
+    padding: 35px 25px;
+    margin: 0 5px;
+    border-radius: 15px;
+}
+
+.services-1 img{
+    width: 25px;
+    margin-bottom: 15px;
+    
+}
+.services-1 h3{
+    font-size: 25px;
+    color: blue;
+    margin: 20px 0;
+}
+
+.services-1 a{
+    color: rgb(190, 168, 168);
+    font-size: 16px;
+}
+.princes{
+    display: flex;
+}
+.princes-1{
+    
+    width: 50%;
+    padding: 150px 250px 150px 100px;
+    background-color: rgb(10, 10, 10);
+}
+table{
+    margin: 50px 0;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    
+}
+
+tr{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(78, 61, 61);
+    margin-bottom: 20px;
+
+}
+th{
+    color:  rgb(255, 255, 240);
+    padding-bottom: 15px;
+}
+td{
+    color: rgb(148, 125, 125);
+}
+.princes-2{
+ background-image: url(/imagenes/lo.jpg);   
+  background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+.personal{
+    padding: 100px 0;
+    text-align: center;
+}
+.personal-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.personal-txt h2{
+    color: rgb(27, 101, 187);
+    font-size: 50px;
+    padding: 5px;
+}
+.personal-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+.personal-1{
+    text-align: center;
+
+}
+
+.personal-1 img {
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.personal-1 h3{
+    font-size: 22px;
+    color: black;
+}
+.personal-1 p{
+    padding: 0 50px;
+
+}
+.personal-1 a{
+    color: rgb(122, 83, 83);
+}
+
+.footer-bg{
+   background-color: rgb(94, 69, 69);
+    background-image: url(/imagenes/lop.jpg);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: center ;
+    text-align: center;
+    padding: 150px 190px; 
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.campo-1{
+    margin-bottom: 15px;
+}
+
+.campo{
+    margin: 5px;
+    padding: 20px 15px;
+    width: 250px;
+    background-color: rgb(2, 2, 2);
+    border: 1px solid rgb(11, 143, 92);
+    outline: none;
+    border-radius: 1px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+textarea{
+    width: 520px !important;
+}
+.footer-txt{
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+}
+@media(max-width:991px){
+    .menu{
+        padding: 30px;
+       background-position: left;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(2, 2, 2);
+        display: none;
+    }
+    menu .navbar ul li{
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+   
+    .img-logo{
+        width: 15%;
+    }
+
+
+    .header{
+        min-height: 0vh;
+    }
+    
+    .header-content{
+        padding: 80px 30px 50px 30px;
+    }
+    .header-txt{
+        margin-bottom: 15px;
+    }
+    .header-txt h1{
+        font-size: 90px;
+    }
+    .header-txt p{
+        padding: 0;
+        margin: 15px 0;
+        
+    }
+    .header-dir{
+        flex-direction: column;
+
+    }
+    .dir p{
+        font-size: 18px;
+    }
+    .welcome{
+        flex-direction: column;
+    }
+    .welcome-1{
+        display: none;
+    }
+    .welcome-2{
+        
+        
+        width: 100%;
+        padding: 100px;
+        text-align: center;
+    }
+    .welcome-2-img{
+        background-image: url(l.jpg);
+        opacity: 30%;
+    }
+    h2{
+        font-size: 70px;
+        line-height: 80px;
+    }
+    p{
+        margin: 15px 0;
+    }
+    .services{
+        padding: 36px;
+    }
+    .services-txt p{
+        padding: 0;
+    }
+    .services-group{
+        flex-direction: column;
+        margin: 0;
+    }
+    .services-1{
+        margin: 0 0 20px 0;
+    }
+    .princes{
+        flex-direction: column ;
+    }
+    .princes-1{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+    .table{
+        margin: 25px 0 0 0;
+    }
+    .princes-2{
+        display: none;
+    }
+    .personal{
+        padding: 30px;
+    }
+    .personal-group{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .personal-1{
+        margin-bottom: 25px;
+    }
+    .footer-bg{
+        padding: 30px;
+    }
+    textarea{
+        width: 250px !important;
+    }
+}
